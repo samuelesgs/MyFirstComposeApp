@@ -12,6 +12,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.tooling.preview.Preview
 import com.saltwortdevs.myfirstcomposeapp.components.MyModalDrawer
+import com.saltwortdevs.myfirstcomposeapp.components.animations.MyAnimationVisibility
 import com.saltwortdevs.myfirstcomposeapp.components.navigation.NavigationWrapper
 import com.saltwortdevs.myfirstcomposeapp.login.Greeting
 import com.saltwortdevs.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
@@ -29,7 +30,8 @@ class MainActivity : ComponentActivity() {
                 //MyTimePicker()
                 val scope = rememberCoroutineScope()
 
-                NavigationWrapper()
+                //NavigationWrapper()
+                MyAnimationVisibility()
 
                 /*
                 MyModalDrawer(drawerState = drawerState) {
