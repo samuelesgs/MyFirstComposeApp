@@ -28,7 +28,11 @@ fun NavigationWrapper(modifier: Modifier = Modifier) {
         }
         composable<Settings>(typeMap = mapOf(typeOf<SettingModel>() to createNavType<SettingModel>())) { navBackStackEntry ->
             val setting = navBackStackEntry.toRoute<Settings>()
-            SettingsScreen(settingsModel =setting.settingModel , {})
+            SettingsScreen(settingsModel =setting.settingModel , {
+                navController.navigate(Login) {
+                    popUpTo<Login>{inclusive = true}
+                }
+            })
         }
     }
 }
