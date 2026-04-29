@@ -12,6 +12,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.tooling.preview.Preview
 import com.saltwortdevs.myfirstcomposeapp.components.MyModalDrawer
+import com.saltwortdevs.myfirstcomposeapp.components.animations.FullAnimateAsState
 import com.saltwortdevs.myfirstcomposeapp.components.animations.MyAnimationVisibility
 import com.saltwortdevs.myfirstcomposeapp.components.navigation.NavigationWrapper
 import com.saltwortdevs.myfirstcomposeapp.login.Greeting
@@ -31,7 +32,8 @@ class MainActivity : ComponentActivity() {
                 val scope = rememberCoroutineScope()
 
                 //NavigationWrapper()
-                MyAnimationVisibility()
+                //MyAnimationVisibility()
+                FullAnimateAsState()
 
                 /*
                 MyModalDrawer(drawerState = drawerState) {
