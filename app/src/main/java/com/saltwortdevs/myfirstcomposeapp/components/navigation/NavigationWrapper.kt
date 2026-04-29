@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import com.saltwortdevs.myfirstcomposeapp.components.navigation.model.SettingModel
+import com.saltwortdevs.myfirstcomposeapp.components.navigation.types.createNavType
 import com.saltwortdevs.myfirstcomposeapp.components.navigation.types.settingModelType
 import kotlin.reflect.typeOf
 
@@ -25,7 +26,7 @@ fun NavigationWrapper(modifier: Modifier = Modifier) {
             val detail = navBackStackEntry.toRoute<Detail>()
             DetailScreen(detail.id, navigateToSettings = {navController.navigate(Settings(it)) })
         }
-        composable<Settings>(typeMap = mapOf(typeOf<SettingModel>() to settingModelType)) { navBackStackEntry ->
+        composable<Settings>(typeMap = mapOf(typeOf<SettingModel>() to createNavType<SettingModel>())) { navBackStackEntry ->
             val setting = navBackStackEntry.toRoute<Settings>()
             SettingsScreen(settingsModel =setting.settingModel , {})
         }
