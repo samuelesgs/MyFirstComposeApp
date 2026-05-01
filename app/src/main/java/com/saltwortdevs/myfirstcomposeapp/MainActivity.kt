@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.saltwortdevs.myfirstcomposeapp.components.MyModalDrawer
 import com.saltwortdevs.myfirstcomposeapp.components.animations.FullAnimateAsState
 import com.saltwortdevs.myfirstcomposeapp.components.animations.MyAnimationVisibility
+import com.saltwortdevs.myfirstcomposeapp.components.animations.MyCrossFade
 import com.saltwortdevs.myfirstcomposeapp.components.navigation.NavigationWrapper
 import com.saltwortdevs.myfirstcomposeapp.login.Greeting
 import com.saltwortdevs.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
@@ -33,7 +34,8 @@ class MainActivity : ComponentActivity() {
 
                 //NavigationWrapper()
                 //MyAnimationVisibility()
-                FullAnimateAsState()
+                //FullAnimateAsState()
+                MyCrossFade()
 
                 /*
                 MyModalDrawer(drawerState = drawerState) {

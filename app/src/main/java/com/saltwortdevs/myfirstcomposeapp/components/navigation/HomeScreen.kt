@@ -25,7 +25,7 @@ fun HomeScreen(backTo: () -> Unit, navigateToDetail : (String)  -> Unit) {
     Column(
         Modifier
             .fillMaxSize()
-            .background(Color.Black), horizontalAlignment = Alignment.CenterHorizontally
+            .background(Color.Red), horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(Modifier.weight(1f))
         Text("home screen", fontSize = 30.sp)
